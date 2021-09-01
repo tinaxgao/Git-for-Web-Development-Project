@@ -74,12 +74,32 @@ Link to finished codepen: https://codepen.io/tinaxgao/pen/RwgaPxw?editors=1100
     35. How often should I commit to github?
         > every 20 minutes.
     36. What is the command we would use to push our repo up to github? 
+        > "git push -u origin <firstname-lastname>" the first time, then only "git push" subsequent times.
     37. Walk me through Lambda's git flow. 
+        > 1. mkdir <directory name> a main directory
+        2. cd into the new directory
+        3. git clone <link to repo>
+        4. cd into repo directory
+        5. git checkout -b <firstname-lastname> to make a branch
+        6. code . to open VS code and make changes
+        7. git add . to stage saved changes
+        8. git commit -m "add comment about what was changed" commits the changed file to local branch
+        9. git push -u origin <firstname-lastname> to push changes to GitHub branch. subsequent times only use git push.
+
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        > block elements start on a new line. inline elements like <span> do not start on a new line.
     2. What happens when an element is positioned absolutely? 
+        > it does not move when the window is resized.
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        > use width: and min-width: together
+    4. Name 3 elements that are display block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        > block by default: <p> <div> <li>
+        inline by default: <img> <span> <a>
+        inline-block by default: <input>
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+        > The box model is the way HTML tags wrap a conceptual box around content. Just like a box, the elements have properties like box width (border), packaging (padding), and spacing between boxes (margin).
+        Conceptual boxes are stacked on or against each other in the window in a grid.
+        I'm not sure what it means to "fix" the width in this question, but maybe you can force each element to inhabit its own line and set a width for the parent container or page.
